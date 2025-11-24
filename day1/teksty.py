@@ -37,3 +37,18 @@ print(encode_s)  # b'Witaj \xc5\x9awiecie'
 print(type(encode_s))  # <class 'bytes'>
 # \xc5\x9a - dane w postaci szesnastkowej
 print(encode_s.decode('utf-8'))  # Witaj Świecie
+
+imie = "Radek"
+print(len(imie))  # długośc tekstu, 5
+# f - string format, wstrzykiwanie wartości zmiennych do tekstu
+tekst_format = f"Mam na imię {imie}"
+print(tekst_format)  # Mam na imię Radek
+
+tekst_format = f"\tMam na imię {imie}\n i lubię pythona.\b"
+print(tekst_format)
+# "	Mam na imię Radek
+#  i lubię pythona"
+# \t - tabulator
+# \n - nowa linia
+# \b - backspace
+
