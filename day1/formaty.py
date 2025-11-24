@@ -32,3 +32,9 @@ print(y)  # 4
 z = round(x, 2)
 print(f"{z=}")  # z=3.88
 print(type(z))  # <class 'float'>
+
+print(f"Używam wersji pythona {wersja}")  # Używam wersji pythona 3.90001
+print(f"Używam wersji pythona {wersja:.2f}")  # Używam wersji pythona 3.90
+print(f"Używam wersji pythona {wersja:.1f}")  # Używam wersji pythona 3.9
+print(f"Używam wersji pythona {wersja:.0f}")  # Używam wersji pythona 4
+
