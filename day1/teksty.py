@@ -52,3 +52,9 @@ print(tekst_format)
 # \n - nowa linia
 # \b - backspace
 
+starszy = "Witaj %s!"  # %s - string
+print(starszy % imie)  # Witaj Radek!
+
+print("witaj {}".format("Radek"))  # witaj Radek
+
+print("Witaj", imie)  # Witaj Radek
