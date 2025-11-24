@@ -74,3 +74,21 @@ print(bool(0))  # False
 print(bool(""))  # False
 print(bool(100 - 100))  # False
 print(bool(None))  # False, null, stan nieokreslony, brak wartości, nie wiem, nie ma
+
+print(40 * "-")
+# operacje logiczne
+# and - i
+print(True and True)  # True
+print(True and False)  # False
+print(False and False)  # False
+print(False and True)  # False
+
+# or  - lub
+print(True or True)  # True#         True
+print(True or False)  # True#        True
+print(False or False)  # False#      False
+print(False or True)  # True#        True
+
+# not - negacja
+print(not True)  # False
+print(not False)  # True
