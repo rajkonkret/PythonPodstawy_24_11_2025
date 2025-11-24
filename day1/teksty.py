@@ -58,3 +58,12 @@ print(starszy % imie)  # Witaj Radek!
 print("witaj {}".format("Radek"))  # witaj Radek
 
 print("Witaj", imie)  # Witaj Radek
+
+print("""Tekst
+    wilolinijkowy""")
+# "Tekst
+#     wilolinijkowy"
+
+# komentarz wielolinijowy jest traktowany jak dokumentacja
+"""Komentarz
+    wilolinijkowy"""
