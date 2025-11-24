@@ -26,4 +26,9 @@ print(tekst.count("i"))  # wystepuje 3 razy
 print(tekst.count("w"))  # 1 jeden  raz
 print(tekst.lower().count("w"))  # 2, wystepuje 2 razy
 
-print()
+print(tekst.removeprefix("Witaj"))  # " Świecie"
+print(tekst.removesuffix("Świecie"))  # "Witaj "
+
+# strip() - usunięcie białych znaków, wiodących i kończących spacji
+print(tekst.removesuffix("Świecie").strip())  # "Witaj"
+
