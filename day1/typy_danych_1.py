@@ -104,3 +104,4 @@ print(f"Porównanie {a >= b = }")  # Porównanie a >= b = False
 
 print(f"Porównanie {a} == {b} = {a == b}")  # == porównanie, Porównanie 6 == 8 = False
 print(f"Porównanie {a} != {b} = {a != b}")  # != Porównanie czy rózne, 6 != 8 = True
+# https://naukapythona.com.pl/
