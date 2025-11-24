@@ -50,3 +50,7 @@ print(sys.float_info)
 # , min=2.2250738585072014e-308, min_exp=-1021,
 # min_10_exp=-307, dig=15, mant_dig=53, epsilon=2.220446049250313e-16, radix=2, rounds=1)
 
+# typ logiczny
+# prawda, fałsz
+# True, False
+# 1, 0
