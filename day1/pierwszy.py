@@ -90,3 +90,4 @@ print(name)  # 90
 # pierwszy.py:78: error: Name "name" already defined on line 67  [no-redef]
 # pierwszy.py:81: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
 # Found 3 errors in 1 file (checked 1 source file)
+print()
