@@ -38,3 +38,9 @@ print(f"Używam wersji pythona {wersja:.2f}")  # Używam wersji pythona 3.90
 print(f"Używam wersji pythona {wersja:.1f}")  # Używam wersji pythona 3.9
 print(f"Używam wersji pythona {wersja:.0f}")  # Używam wersji pythona 4
 
+print(f"{user:<10}")  # "Tomek     "
+print(f"{user:>15}")  # "          Tomek"
+print(f"{user:^20}")  # "       Tomek        "
+print(f"{user:.^20}")  # ".......Tomek........"
+
+
