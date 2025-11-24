@@ -43,4 +43,12 @@ print(f"{user:>15}")  # "          Tomek"
 print(f"{user:^20}")  # "       Tomek        "
 print(f"{user:.^20}")  # ".......Tomek........"
 
+print(liczba)  # 345678098123678
+print(f'Nasza duża liczba: {liczba:,}')  # Nasza duża liczba: 345,678,098,123,678
+print(f'Nasza duża liczba: {liczba:_}')  # Nasza duża liczba: 345_678_098_123_678
+print(f'Nasza duża liczba: {liczba:_}'.replace("_", " "))  # Nasza duża liczba: 345 678 098 123 678
+print(f'Nasza duża liczba: {liczba:_}'.replace("_", "."))  # Nasza duża liczba: 345.678.098.123.678
 
+liczba = 150_000_000_000
+print(liczba)  # 150000000000
+print(type(liczba))  # <class 'int'>
