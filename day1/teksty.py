@@ -12,9 +12,18 @@ print(zm)  # WITAJ ŚWIECIE
 print(tekst)
 
 print(tekst.lower())  # witaj świecie
-# xtrl d - powielenie lini
+# ctrl d - powielenie lini
 print(tekst.capitalize())  # Witaj świecie
 
 # Witaj świecie
 # 0123456789....
-print(tekst[2])
+print(tekst[2])  # t
+
+print(tekst.index("Ś"))  # index numer: 6
+
+print(tekst.count("i"))  # wystepuje 3 razy
+
+print(tekst.count("w"))  # 1 jeden  raz
+print(tekst.lower().count("w"))  # 2, wystepuje 2 razy
+
+print()
