@@ -68,3 +68,8 @@ print(f"trzecia grupa:", name3)
 # Pierwsza grupa: Zenek
 # Druga grupa: ['Marek', 'Radek']
 # trzecia grupa: Zenek
+
+# sortowanie sorted()  - zwraca posortowaną listę!!!
+print(sorted(tupla_imiona))  # ['Ania', 'Marek', 'Radek', 'Zenek']
+# tupla_imiona nie została zmieniona
+print(tupla_imiona)  # ('Zenek', 'Marek', 'Radek', 'Ania')
