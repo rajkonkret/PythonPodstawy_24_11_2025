@@ -107,4 +107,7 @@ print(lista.pop(2))  # , Zenek
 zmienna = lista.pop(-1)
 print("Usunięto:", zmienna)  # Usunięto: Asia
 print(lista)  # ['Radek', 'Ola', 'Mateusz', 'Marcin', 'Magda', 'Paulina']
-print(lista.pop())  # usunie ostatni
+print(lista.pop())  # usunie ostatni, Paulina
+
+# sprawdzenie indexu dla danego elementu, pierwszy napotkany
+print(lista.index("Marcin"))  # indeks: 3
