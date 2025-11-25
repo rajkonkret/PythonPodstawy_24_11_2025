@@ -6,7 +6,7 @@
 
 odp = True
 print(bool(True))  # True
-
+if odp: print("Test")
 # debugger - wykonywanie kodu krok po kroku
 # pułapka
 odp = False
@@ -81,3 +81,35 @@ print(f"Rabat wynosi: {rabat}")  # Rabat wynosi: 25
 # operator warumkowy
 rabat = 25 if suma_zam > 100 else 0
 print(f"Rabat wynosi: {rabat}")  # Rabat wynosi: 25
+
+#
+# spam += 1    spam = spam + 1
+# spam -= 1    spam = spam - 1
+# spam *= 1    spam = spam * 1
+# spam /= 1    spam = spam / 1
+# spam %= 1    spam = spam % 1
+# napisac test z....
+# dodac punktację
+punkty = 0
+odp = input("Podaj rok Chrztu Polski:")
+if odp.strip().casefold() == '966'.strip().casefold():
+    print("Prawidłowa odpowiedź")
+    punkty += 1  # punkty = punkty + 1
+else:
+    print("Błędna odpowiedż")
+print("Zdobyte punkty:", punkty)
+
+odp = input("czy Ala ma kota?")
+if odp.strip().casefold() == 'tak'.strip().casefold():
+    print("Prawidłowa odpowiedź")
+    punkty += 1  # punkty = punkty + 1
+else:
+    print("Błędna odpowiedż")
+print("Zdobyte punkty:", punkty)
+
+# Podaj rok Chrztu Polski:966
+# Prawidłowa odpowiedź
+# Zdobyte punkty: 1
+# czy Ala ma kota?tak
+# Prawidłowa odpowiedź
+# Zdobyte punkty: 2
