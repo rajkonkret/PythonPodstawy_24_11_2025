@@ -42,5 +42,4 @@ print(zbior_copy)
 print(id(zbior))  # 2296409860448
 print(id(zbior_copy))  # 2296415232608
 
-
-
+zbior_2 = {667, 11, 44, 12.34, 18, 52, 667, 62}
