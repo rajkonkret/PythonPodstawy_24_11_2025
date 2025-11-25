@@ -47,3 +47,16 @@ print(lista[:3])  # ['Radek', 'Tomek', 'Zenek']
 
 print(lista[2:])  # ['Zenek', 'Marek', 'Mateusz', 'Marcin', 'Magda', 'Paulina'], z ostatnim włacznie
 print(lista[2:7])  # ['Zenek', 'Marek', 'Mateusz', 'Marcin', 'Magda'], bez ostatniego, niewlacznie
+
+print(lista[2:20])  # ['Zenek', 'Marek', 'Mateusz', 'Marcin', 'Magda', 'Paulina']
+print(lista[12:45])  # []
+
+print(bool(lista[12:45]))  # False
+
+print(lista[:])  # ['Radek', 'Tomek', 'Zenek', 'Marek', 'Mateusz', 'Marcin', 'Magda', 'Paulina']
+
+# ['Radek', 'Tomek', 'Zenek', 'Marek', 'Mateusz', 'Marcin', 'Magda', 'Paulina']
+#     0         1       2        3         4          5         6        7
+#     -8        -7      -6       -5        -4         -3        -2       -1
+print(lista[-2:0])  # [5:0] -> []
+print(lista[0:-2])  # ['Radek', 'Tomek', 'Zenek', 'Marek', 'Mateusz', 'Marcin']
