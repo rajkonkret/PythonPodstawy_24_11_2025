@@ -76,3 +76,12 @@ print(list(range(0, 15, 2)))  # (start,stop,krok), [0, 2, 4, 6, 8, 10, 12, 14]
 print(lista[::-1])
 # ['Paulina', 'Magda', 'Marcin', 'Mateusz', 'Marek', 'Zenek', 'Tomek', 'Radek']
 
+# nadpisanie elementu w liscie, na wskazanym indeksie
+lista[3] = "Asia"
+print(lista)
+# ['Radek', 'Tomek', 'Zenek', 'Asia', 'Mateusz', 'Marcin', 'Magda', 'Paulina']
+
+# wstawienie elementu na wskazanym indeksie
+lista.insert(1, "Ola")
+print(lista)
+# ['Radek', 'Ola', 'Tomek', 'Zenek', 'Asia', 'Mateusz', 'Marcin', 'Magda', 'Paulina']
