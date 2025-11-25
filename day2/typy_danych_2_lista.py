@@ -161,3 +161,14 @@ liczby[3] = 666
 print(liczby[0:3])  # [12.34, 34, 54] -> indeksy 012
 print(liczby[-3])  # 666
 print(liczby)  # [12.34, 34, 54, 666, 999, 999]
+
+tekst = "Pyth on."
+# [], list()
+
+# rozpakowanie sekwencji
+lista1 = list(tekst)
+print(lista1)
+# ['P', 'y', 't', 'h', ' ', 'o', 'n', '.']
+
+lista2 = [tekst]
+print(lista2)  # ['Pyth on.']
