@@ -111,3 +111,25 @@ print(lista.pop())  # usunie ostatni, Paulina
 
 # sprawdzenie indexu dla danego elementu, pierwszy napotkany
 print(lista.index("Marcin"))  # indeks: 3
+
+a = 1
+b = 3
+a = b
+print(f"{a=}, {b=}")  # a=3, b=3
+# b = a -> a=1, b=1
+b = 9
+print(f"{a=}, {b=}")  # a=3, b=9
+
+lista2 = lista  # kopia adresu, referencja
+lista_copy = lista.copy()  # kopia elementów listy do nowej listy
+print(lista)  # ['Radek', 'Ola', 'Mateusz', 'Marcin', 'Magda']
+print(lista2)  # ['Radek', 'Ola', 'Mateusz', 'Marcin', 'Magda']
+lista.clear()  # usunięcie wszystkich elementów z listy
+print(lista)  # []
+print(lista2)  # []
+print(lista_copy)  # ['Radek', 'Ola', 'Mateusz', 'Marcin', 'Magda']
+
+# id() - pokazuje referencje
+print(id(lista))  # 2213587636160
+print(id(lista2))  # 2213587636160
+print(id(lista_copy))  # 2213590273152
