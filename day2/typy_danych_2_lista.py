@@ -60,3 +60,19 @@ print(lista[:])  # ['Radek', 'Tomek', 'Zenek', 'Marek', 'Mateusz', 'Marcin', 'Ma
 #     -8        -7      -6       -5        -4         -3        -2       -1
 print(lista[-2:0])  # [5:0] -> []
 print(lista[0:-2])  # ['Radek', 'Tomek', 'Zenek', 'Marek', 'Mateusz', 'Marcin']
+
+# range() - generuje liczby z zakresu
+lista_15 = list(range(15))  # od 0 do 14
+print(lista_15)
+# [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+print(lista_15[0:15:2])  # [start:stop:krok], [0, 2, 4, 6, 8, 10, 12, 14]
+print(lista[::2])  # ['Radek', 'Zenek', 'Mateusz', 'Magda']
+print(lista_15[::3])  # [0, 3, 6, 9, 12]
+
+print(list(range(0, 15, 2)))  # (start,stop,krok), [0, 2, 4, 6, 8, 10, 12, 14]
+
+# wyświetli listę w odwrotnej kolejności
+print(lista[::-1])
+# ['Paulina', 'Magda', 'Marcin', 'Mateusz', 'Marek', 'Zenek', 'Tomek', 'Radek']
+
