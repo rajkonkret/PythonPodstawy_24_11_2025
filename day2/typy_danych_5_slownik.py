@@ -65,7 +65,7 @@ print(dict_small)  # {'x': 2, 'y': 3, 'z': 8}
 a = int(input("Podaj pierwszą liczbę:"))
 b = input("Podaj drugą liczbę:")
 print(a + float(b))
+print(int(a) + float(b))
 # Podaj pierwszą liczbę:2
 # Podaj drugą liczbę:4
 # 6.0
-
