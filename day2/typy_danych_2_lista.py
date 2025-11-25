@@ -133,3 +133,31 @@ print(lista_copy)  # ['Radek', 'Ola', 'Mateusz', 'Marcin', 'Magda']
 print(id(lista))  # 2213587636160
 print(id(lista2))  # 2213587636160
 print(id(lista_copy))  # 2213590273152
+
+liczby = [54, 999, 34, 12.34, 567, 999]
+print(liczby)  # [54, 999, 34, 12.34, 567, 999]
+print(type(liczby))  # <class 'list'>
+
+liczby.sort()
+print(liczby)  # [12.34, 34, 54, 567, 999, 999]
+#
+# liczby = [54, 999, 34, 12.34, 567, 999, "A"]
+# print(liczby)  # [54, 999, 34, 12.34, 567, 999, 'A']
+# liczby.sort()
+# # TypeError: '<' not supported between instances of 'str' and 'int'
+
+print(lista_copy)  # ['Radek', 'Ola', 'Mateusz', 'Marcin', 'Magda']
+lista_copy.sort()
+print(lista_copy)  # ['Magda', 'Marcin', 'Mateusz', 'Ola', 'Radek']
+
+lista_copy.sort(reverse=True)  # sortowanie i odwrócenie
+print(lista_copy)  # ['Radek', 'Ola', 'Mateusz', 'Marcin', 'Magda']
+
+lista_copy.reverse()  # tylko odwróćenie
+print(lista_copy)
+# ['Magda', 'Marcin', 'Mateusz', 'Ola', 'Radek']
+
+liczby[3] = 666
+print(liczby[0:3])  # [12.34, 34, 54] -> indeksy 012
+print(liczby[-3])  # 666
+print(liczby)  # [12.34, 34, 54, 666, 999, 999]
