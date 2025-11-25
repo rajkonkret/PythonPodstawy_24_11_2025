@@ -39,4 +39,8 @@ print(dictionary["Imie".lower()])  # ['Radek', 'Tomek', 'Magda']
 print(dictionary.get("Imie"))  # None
 print(dictionary.get("Imie", "default"))  # default
 
+name1 = "GROSS"
+name2 = "groß"
 
+print(name1.lower() == name2.lower())  # False
+print(name1.casefold() == name2.casefold())  # True
