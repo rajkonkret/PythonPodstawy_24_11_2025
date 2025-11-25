@@ -30,3 +30,25 @@ if odp:
 
 if odp == "Radek":  # porównanie
     print("Jesteś Radek")  # Jesteś Radek
+
+odp = 0
+print(bool(odp))  # False
+if odp:
+    print("Działa")
+else:  # w przeciwnym przypadku
+    print("Zero -> False")
+# Zero -> False
+
+a = "Radek"
+# Długośc wynosi: dl, wiecej niz 3
+if len(a) > 3:
+    print(f"Długośc wynosi {len(a)}, więcej niż 3")
+
+n = len(a)
+if n > 3:
+    print(f"Długośc wynosi {n}, więcej niż 3")
+
+# walrus operator, operator morsa
+if (n := len(a)) > 3:
+    print(f"Długośc wynosi {n}, więcej niż 3")
+# Długośc wynosi 5, więcej niż 3
