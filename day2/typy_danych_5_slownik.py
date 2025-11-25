@@ -61,11 +61,25 @@ print(dict_small)  # {'x': 2, 'y': 3, 'z': 8}
 # # Podaj imię:Radek
 # # Radek
 
-# napisać aplikację kalkulator
-a = int(input("Podaj pierwszą liczbę:"))
-b = input("Podaj drugą liczbę:")
-print(a + float(b))
-print(int(a) + float(b))
-# Podaj pierwszą liczbę:2
-# Podaj drugą liczbę:4
-# 6.0
+# # napisać aplikację kalkulator
+# a = int(input("Podaj pierwszą liczbę:"))
+# b = input("Podaj drugą liczbę:")
+# print(a + float(b))
+# print(int(a) + float(b))
+# # Podaj pierwszą liczbę:2
+# # Podaj drugą liczbę:4
+# # 6.0
+
+
+# napisac apliakcje słownik pol-ang
+pol_ang = {'pies': 'dog', "kot": 'cat', "dach": "roof"}
+print("Znam takie słowka:", pol_ang.keys())
+odp = input("Podaj słówko do przetłumaczenia:")
+print(f"Prawidłowa odpowiedż dla: {odp} to: {pol_ang.get(odp.strip().casefold(), "Nie ma w słowniku")}")
+# Podaj słówko do przetłumaczenia:kot
+# Prawidłowoa odpowiedż dla: kot to: cat
+# Znam takie słowka: dict_keys(['pies', 'kot', 'dach'])
+# Podaj słówko do przetłumaczenia: Kot
+# Prawidłowa odpowiedż dla:  Kot to: cat
+
+print("\N{LATIN SMALL LETTER SHARP S}")  # ß

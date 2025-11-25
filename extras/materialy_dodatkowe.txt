@@ -61,6 +61,7 @@ https://play.google.com/store/apps/details?id=pl.rajkonkret.testjava2&hl=pl&gl=U
 \uXXXX - Znak Unicode o wartości czteroznakowego kodu szesnastkowego
 \UXXXXXXXX - Znak Unicode o wartości ośmioznakowego kodu szesnastkowego
 \N{name} - Znak Unicode o podanej nazwie
+print("\N{LATIN SMALL LETTER SHARP S}")  # ß
 The and Operator’s Truth Table:
 
 \033[31m: Set text color to red
