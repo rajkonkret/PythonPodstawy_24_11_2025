@@ -134,3 +134,11 @@ for i, o in enumerate(imiona, start=1):
 # 2 Tomek
 # 3 Agata
 # 4 Marek
+
+a, b = (3, 'Marek')
+print(a, b)  # 3 Marek
+
+imiona = ["Radek", "Tomek", "Agata", "Marek"]
+wiek = [44, 56, 23, 34]
+
+# Radek 44
