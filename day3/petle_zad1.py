@@ -89,3 +89,48 @@ for i in range(10, 0, -2):  # krok -2, idziemy w dół od 10 do 1, (start, stop,
 
 for i in range(-10, 0):
     print(i)
+
+imiona = ["Radek", "Tomek", "Agata", "Marek"]
+for p in imiona:
+    print(p)
+# Radek
+# Tomek
+# Agata
+# Marek
+
+# 0 Randek
+for i in range(len(imiona)):
+    print(i, imiona[i])
+# 0 Radek
+# 1 Tomek
+# 2 Agata
+# 3 Marek
+
+for p in imiona:
+    print(imiona.index(p), p)
+# 0 Radek
+# 1 Tomek
+# 2 Agata
+# 3 Marek
+
+# enumerate() - zwraca numer i element kolekcji
+for p in enumerate(imiona):
+    print(p)
+# (0, 'Radek')
+# (1, 'Tomek')
+# (2, 'Agata')
+# i, o = (3, 'Marek')
+
+for i, o in enumerate(imiona):
+    print(i, o)
+# 0 Radek
+# 1 Tomek
+# 2 Agata
+# 3 Marek
+
+for i, o in enumerate(imiona, start=1):
+    print(i, o)
+# 1 Radek
+# 2 Tomek
+# 3 Agata
+# 4 Marek
