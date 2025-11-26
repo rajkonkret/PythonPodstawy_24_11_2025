@@ -24,3 +24,8 @@ print("Czas:", formated_time)  # Czas: 14:03:39
 formated_time_12h = datetime.now().strftime("%I:%M:%S %p")
 print("Czas:", formated_time_12h)  # Czas: 02:05:09 PM
 # print("Radek")
+
+# days=0, seconds=0, microseconds=0,
+#                 milliseconds=0, minutes=0, hours=0, weeks=0
+tomorrow = today + timedelta(days=1)
+print("Jutro będzie:", tomorrow)  # Jutro będzie: 2025-11-27
