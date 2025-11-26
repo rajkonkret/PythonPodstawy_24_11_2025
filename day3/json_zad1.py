@@ -37,3 +37,24 @@ with open('nasze_dane.json', "w") as f:
 #     "czy_pali": null,
 #     "name": "Radek"
 # }
+
+# wczytanie do słownika
+with open('nasze_dane.json', "r") as f:
+    data = json.load(f)
+
+print(data)
+print(type(data))
+# {'age': 40, 'czy_pali': None, 'name': 'Radek'}
+# <class 'dict'>
+
+print(data['name'])  # Radek
+
+# zamiana słownika na tekst (json)
+json_tekst = json.dumps(data)
+print(json_tekst)  # {"age": 40, "czy_pali": null, "name": "Radek"}
+print(type(json_tekst))  # <class 'str'>
+
+# zamiana json na słownik
+dict_json = json.loads(json_tekst)
+print(dict_json)
+print(type(dict_json))
