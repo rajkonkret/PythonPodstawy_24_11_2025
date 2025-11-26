@@ -32,7 +32,7 @@ with open("test.log", "a", encoding='utf-8') as f:
     f.write("Dodane\n")
     f.write("Dodane2\n")
     f.write("Dodane3\n")
-    f.write("Dśodane4\n")
+    f.write("Dśążźćodane4\n")
 
 # r - odczyt
 with open('test.log', "r", encoding='utf-8') as file:
