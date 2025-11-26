@@ -83,3 +83,9 @@ print("Po zakońćzeniu pętli")
 # 8 Wieksze od 4
 # 8
 # Po zakońćzeniu pętli
+
+for i in range(10, 0, -2):  # krok -2, idziemy w dół od 10 do 1, (start, stop, krok)
+    print(i)
+
+for i in range(-10, 0):
+    print(i)
