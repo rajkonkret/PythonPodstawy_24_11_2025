@@ -3,3 +3,25 @@
 # menu z opcjami
 # wyswietlić łądnie wynik dzialania
 # obsłużyc wyjątki
+
+
+        break
+
+    try:
+        a = int(input("Podaj pierwszą liczbę"))
+        b = int(input("Podaj drugą liczbę"))
+
+        if odp == "1":
+            print(f'Wynik {a} + {b} = {a + b}')
+        elif odp == "2":
+            print(f'Wynik {a} - {b} = {a - b}')
+        elif odp == "3":
+            print(f"Wynik {a} * {b} = {a * b}")
+        elif odp == "4":
+            print(f"Wynik {a} / {b} = {a / b}")
+    except ZeroDivisionError:
+        print("Nie dziel przez zero")
+    except Exception as e:
+        print("Bład:", e)
+    finally:
+        print("Podaj kolejną operację")
