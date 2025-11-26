@@ -15,9 +15,10 @@ while True:
     """)
 
     odp = input("Podaj wybraną opcję")
-    if odp == "5":
+    # if odp == "5":
+    #     break
+    if odp not in ["1", "2", "3", "4"]:
         break
-
     try:
         a = int(input("Podaj pierwszą liczbę"))
         b = int(input("Podaj drugą liczbę"))
@@ -32,8 +33,9 @@ while True:
             print(f"Wynik {a} / {b} = {a / b}")
     except ZeroDivisionError:
         print("Nie dziel przez zero")
+    except ValueError:
+        print("Muszą być podane liczby!!")
     except Exception as e:
         print("Bład:", e)
     finally:
         print("Podaj kolejną operację")
-
