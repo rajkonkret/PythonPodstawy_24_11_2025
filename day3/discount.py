@@ -29,3 +29,10 @@ print("Czas:", formated_time_12h)  # Czas: 02:05:09 PM
 #                 milliseconds=0, minutes=0, hours=0, weeks=0
 tomorrow = today + timedelta(days=1)
 print("Jutro będzie:", tomorrow)  # Jutro będzie: 2025-11-27
+
+#  26/11/2025
+object_data = datetime.now().strptime("26/11/2025", "%d/%m/%Y")
+print(object_data)
+print(type(object_data))
+# 2025-11-26 00:00:00
+# <class 'datetime.datetime'>
