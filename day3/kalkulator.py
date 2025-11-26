@@ -39,3 +39,12 @@ while True:
         print("Bład:", e)
     finally:
         print("Podaj kolejną operację")
+
+wyr = "5*7+12"
+print(eval(wyr))
+
+a = 10
+b = 30
+dict1 = {"dodawanie": a + b}
+print(dict1['dodawanie'])
+# 40
