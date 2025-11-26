@@ -36,3 +36,16 @@ print(object_data)
 print(type(object_data))
 # 2025-11-26 00:00:00
 # <class 'datetime.datetime'>
+
+products = [
+    {"sku": 1, "exp_date": today, "price": 200},
+    {"sku": 2, "exp_date": today, "price": 100},
+    {"sku": 3, "exp_date": tomorrow, "price": 50},
+    {"sku": 4, "exp_date": today, "price": 49.99},
+    {"sku": 5, "exp_date": today, "price": 100},
+]
+
+for p in products:
+    print(p)
+    print(p['exp_date']) # 2025-11-26
+    if p['exp_date']
