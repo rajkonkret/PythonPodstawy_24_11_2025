@@ -5,6 +5,17 @@
 # obsłużyc wyjątki
 
 
+while True:
+    print("""
+    1. Dodawanie
+    2. Odejmowanie
+    3. Mnożenie
+    4. Dzielenie
+    5. Koniec
+    """)
+
+    odp = input("Podaj wybraną opcję")
+    if odp == "5":
         break
 
     try:
@@ -25,3 +36,4 @@
         print("Bład:", e)
     finally:
         print("Podaj kolejną operację")
+
