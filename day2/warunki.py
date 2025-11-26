@@ -90,22 +90,22 @@ print(f"Rabat wynosi: {rabat}")  # Rabat wynosi: 25
 # spam %= 1    spam = spam % 1
 # napisac test z....
 # dodac punktację
-punkty = 0
-odp = input("Podaj rok Chrztu Polski:")
-if odp.strip().casefold() == '966'.strip().casefold():
-    print("Prawidłowa odpowiedź")
-    punkty += 1  # punkty = punkty + 1
-else:
-    print("Błędna odpowiedż")
-print("Zdobyte punkty:", punkty)
-
-odp = input("czy Ala ma kota?")
-if odp.strip().casefold() == 'tak'.strip().casefold():
-    print("Prawidłowa odpowiedź")
-    punkty += 1  # punkty = punkty + 1
-else:
-    print("Błędna odpowiedż")
-print("Zdobyte punkty:", punkty)
+# punkty = 0
+# odp = input("Podaj rok Chrztu Polski:")
+# if odp.strip().casefold() == '966'.strip().casefold():
+#     print("Prawidłowa odpowiedź")
+#     punkty += 1  # punkty = punkty + 1
+# else:
+#     print("Błędna odpowiedż")
+# print("Zdobyte punkty:", punkty)
+#
+# odp = input("czy Ala ma kota?")
+# if odp.strip().casefold() == 'tak'.strip().casefold():
+#     print("Prawidłowa odpowiedź")
+#     punkty += 1  # punkty = punkty + 1
+# else:
+#     print("Błędna odpowiedż")
+# print("Zdobyte punkty:", punkty)
 
 # Podaj rok Chrztu Polski:966
 # Prawidłowa odpowiedź
@@ -113,3 +113,29 @@ print("Zdobyte punkty:", punkty)
 # czy Ala ma kota?tak
 # Prawidłowa odpowiedź
 # Zdobyte punkty: 2
+
+# zasymulujemy system zbierania logów
+# zmienna: przechowuje typ sestemu np.: console, email, inny
+
+# console: "Stało się coś strasznego"
+# email: "System email"
+# zmienna: przechowuje rodzaj błędu: error, medium i inny
+# dla email: do listy błedów dopisać error -> krytyczny
+alert_system = "email"
+error_level = "error"
+lista_b = []
+
+if alert_system == "console":
+    print("Stało się coś strasznego")
+elif alert_system == "email":
+    print("System email")
+    if error_level == "error":
+        lista_b.append("krytyczny")
+    elif error_level == "medium":
+        lista_b.append("ostrzeżenie")
+    else:
+        lista_b.append("inny")
+else:
+    print("Inny system")
+
+print(lista_b)  # ['krytyczny']
