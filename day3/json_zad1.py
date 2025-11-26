@@ -58,3 +58,8 @@ print(type(json_tekst))  # <class 'str'>
 dict_json = json.loads(json_tekst)
 print(dict_json)
 print(type(dict_json))
+resp = '''{"description": "Zmienna to miejsce w pami\u0119ci komputera, gdzie przechowywana jest warto\u015b\u0107. W Pythonie zmienna przypisywana jest do nazwy za pomoc\u0105 operatora `=`.", "example": "nazwa = \"Python\"\nwiek = 30\nczy_aktywny = True","id": 1,"level": "podstawowy","term": "Co to jest zmienna w Pythonie?"}'''
+
+dane = json.loads(resp)
+for i in dane:
+    print(i)
