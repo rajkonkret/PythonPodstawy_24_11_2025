@@ -11,5 +11,9 @@ print(random.randrange(5))  # 3, int od 0 do 4
 
 print(random.random())  # 0.9644083894862632, od 0 do 0.9999999
 print(random.random() * 6)  # 1.2286307452759664, od 0 do 5.9999999
+print(round(random.random() * 6))  # 5
 
+lista = [67, 45, 32, 68, 90, 42, 69]
+print(lista[random.randrange(len(lista))])  # 67
 
+print(random.choice(lista))  # 68
