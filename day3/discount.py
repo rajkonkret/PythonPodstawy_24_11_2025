@@ -51,13 +51,21 @@ for p in products:
     if p['exp_date'] != today:
         continue
     p['price'] *= 0.8
-    print(f"""Price for sku {p['sku']}
-is now {p['price']}""")
+    print(f"""
+Price for sku {p['sku']}
+is now {p['price']:.2f}
+""")
 # Price for sku 1
-# is now 160.0
+# is now 160.00
+#
+#
 # Price for sku 2
-# is now 80.0
+# is now 80.00
+#
+#
 # Price for sku 4
-# is now 39.992000000000004
+# is now 39.99
+#
+#
 # Price for sku 5
-# is now 80.0
+# is now 80.00
