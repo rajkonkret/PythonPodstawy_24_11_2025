@@ -46,6 +46,18 @@ products = [
 ]
 
 for p in products:
-    print(p)
-    print(p['exp_date']) # 2025-11-26
-    if p['exp_date']
+    # print(p)
+    # print(p['exp_date'])  # 2025-11-26
+    if p['exp_date'] != today:
+        continue
+    p['price'] *= 0.8
+    print(f"""Price for sku {p['sku']}
+is now {p['price']}""")
+# Price for sku 1
+# is now 160.0
+# Price for sku 2
+# is now 80.0
+# Price for sku 4
+# is now 39.992000000000004
+# Price for sku 5
+# is now 80.0
