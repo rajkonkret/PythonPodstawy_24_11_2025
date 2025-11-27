@@ -38,7 +38,8 @@ list_product = [key for key in products[0]]
 print(list_product)  # ['sku', 'exp_date', 'price']
 
 filename = "records_discount.csv"
+# delimiter=";" - ustawienie znaku podziału
 with open(filename, "w", newline="") as f:
-    csvwriter = csv.DictWriter(f, fieldnames=list_product)
+    csvwriter = csv.DictWriter(f, fieldnames=list_product, delimiter=";")
     csvwriter.writeheader()  # pierwszy wiersz jako nazwy kolumn
     csvwriter.writerows(products)  # writerows
