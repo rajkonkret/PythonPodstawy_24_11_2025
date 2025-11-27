@@ -37,4 +37,7 @@ print(type(zm))  # <class 'float'>
 if zm == 1230:
     print("Ok")  # Ok
 
-print(dodaj(5, 9) + odejmij(5, 9))
+print(dodaj(5, 9) + odejmij(5, 9))  # 10
+print(print("Radek"))
+# Radek
+# None
