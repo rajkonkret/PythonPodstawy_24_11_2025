@@ -20,6 +20,13 @@ class Human:
         print(f"Nazywam się: {self.imie}")
         # print(f"Nazywam się: {cz1.imie}")
 
+    def ruszaj(self):
+
+        if self.plec == "m":
+            print("Ruszył e m w drogę.")
+        else:
+            print("Ruszyał a m w drogę.")
+
 
 # print(print.__doc__)
 # print(Human.__doc__)  # Klasa Human opisujaca człowieka w pythonie
@@ -56,3 +63,8 @@ print(cz2.plec)
 
 cz1.powitanie()  # Nazywam się: Radek
 cz2.powitanie()  # Nazywam się: Anna
+
+cz1.ruszaj()
+cz2.ruszaj()
+# Ruszył e m w drogę.
+# Ruszyał a m w drogę.
