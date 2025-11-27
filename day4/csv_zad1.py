@@ -19,3 +19,9 @@ with open(filename, "w", newline="") as csv_f:
     csvwriter.writerow(fields)
     csvwriter.writerow(row)
 # ctrl shift - strzalka do gory
+
+filename = "records_dict.csv"
+with open(filename, "w", newline="") as f:
+    csvwriter = csv.DictWriter(f, fieldnames=fields)
+    csvwriter.writeheader()
+    csvwriter.writerow(dict_name)
