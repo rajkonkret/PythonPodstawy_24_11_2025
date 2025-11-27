@@ -7,11 +7,14 @@ fields = []
 rows = []
 
 with open(filename, "r") as csv_f:
+    # wczytanie fragmentu pliku w celu wyszukania znaku podziału
     dialect = csv.Sniffer().sniff(csv_f.read(1024))
     print(dialect.delimiter)  # ;
+    print(dialect.quotechar)  # "
 
     csv_f.seek(0)  # ustawienie odczytu na początek pliku
-    csvreader = csv.reader(csv_f, delimiter=";")
+    csvreader = csv.reader(csv_f, delimiter=dialect.delimiter)
+    # csvreader = csv.reader(csv_f, delimiter=";")
     print(csvreader)
     # <_csv.reader object at 0x0000016B018041C0> - iterator
 
