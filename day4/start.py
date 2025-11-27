@@ -7,7 +7,9 @@
 import pakiet
 # AttributeError: module 'pakiet' has no attribute 'powitanie'
 # pakiet.powitanie()
-pakiet.info()
+# po dodaniu w __init__ info() jest widoczne
+pakiet.info() # Jestem pakietem v 1.1
+
 
 from pakiet import fun
 
