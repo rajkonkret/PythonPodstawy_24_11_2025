@@ -15,6 +15,11 @@ class Human:
     wiek = None
     plec = "k"
 
+    # self - obiekt
+    def powitanie(self):
+        print(f"Nazywam się: {self.imie}")
+        # print(f"Nazywam się: {cz1.imie}")
+
 
 # print(print.__doc__)
 # print(Human.__doc__)  # Klasa Human opisujaca człowieka w pythonie
@@ -48,3 +53,6 @@ print(cz2.plec)
 # Anna
 # 34
 # k
+
+cz1.powitanie()  # Nazywam się: Radek
+cz2.powitanie()  # Nazywam się: Anna
