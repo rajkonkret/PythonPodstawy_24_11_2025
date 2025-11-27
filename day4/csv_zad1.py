@@ -8,6 +8,10 @@ import csv
 row = ['radek', 'coe', "3", 0]
 fields = ['name', 'branch', 'year', 'cgpa']
 
+dict_name = dict(zip(fields, row))
+print(dict_name)
+# {'name': 'radek', 'branch': 'coe', 'year': '3', 'cgpa': 0}
+
 filename = "records.csv"
 #  newline="" - obejscie problemu pustych linii
 with open(filename, "w", newline="") as csv_f:
