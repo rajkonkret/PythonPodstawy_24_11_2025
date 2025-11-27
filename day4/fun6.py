@@ -1,19 +1,23 @@
 # stworzyć funkcję obliczającą średnią
-def srednia(*cyfry):  # dowolna ilośc argumentów pozycyjnych
+def srednia(name=None, *cyfry):  # dowolna ilośc argumentów pozycyjnych
     print(cyfry)
 
     count = len(cyfry)
+
+    suma_p = sum(cyfry)
     suma = 0
     try:
         for c in cyfry:
             suma += c
 
         avg = suma / count
+        avg_p = suma_p / count
     except Exception as e:
         print("Błąd:", e)
-    else:
-        print(f"Średnia wynosi: {avg}")
-    finally:
+    else:  # gdy nie ma błedu
+        print(f"Średnia dla ucznia: {name}, wynosi: {avg}")
+        print(f"Średnia dla ucznia: {name}, wynosi: {avg_p}")
+    finally:  # wykona się zawsze
         print("Następny uczeń")
 
 
