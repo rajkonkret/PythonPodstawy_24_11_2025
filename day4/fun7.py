@@ -24,4 +24,5 @@ def random_radek(*args, k=0):
 
 
 random_radek(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 101, 23213, 213123)
+# k musi byc po nazwie bo jest po *args
 random_radek(12, 3, k=6)  # (12, 3) 6
