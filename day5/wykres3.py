@@ -7,7 +7,7 @@ colors = ['red', 'blue', 'green', 'yellow']
 plt.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%',
         startangle=90,
         shadow=True,
-        explode=(0.1, 0, 0, 0))
+        explode=(0.2, 0, 0.1, 0))
 
 plt.title("Wykres kołowy")
 plt.axis('equal')
