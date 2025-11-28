@@ -9,4 +9,5 @@ plt.ylabel("Częstość")
 plt.xlabel("Wartość")
 
 plt.savefig("wykres.png")
+plt.savefig("wykres.pdf")
 plt.show()
