@@ -11,3 +11,6 @@ print(data)
 # 'code': 'EUR',
 # 'rates': [{'no': '231/A/NBP/2025', 'effectiveDate': '2025-11-28', 'mid': 4.2369}]}
 
+print(data['rates'])  # [{'no': '231/A/NBP/2025', 'effectiveDate': '2025-11-28', 'mid': 4.2369}]
+print(data['rates'][0])  # {'no': '231/A/NBP/2025', 'effectiveDate': '2025-11-28', 'mid': 4.2369}
+print(data['rates'][0]['mid'])  # 4.2369
