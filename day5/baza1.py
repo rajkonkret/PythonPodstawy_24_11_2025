@@ -14,3 +14,4 @@ finally:
     if conn:
         conn.close()
         print("Połączenie zosyało zamknięte")
+# https://sqlitebrowser.org/
