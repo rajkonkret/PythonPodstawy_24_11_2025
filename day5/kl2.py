@@ -17,6 +17,25 @@ class Human:
         self.wzrost = wzrost
         self.plec = plec
 
+    # self - obiekt
+    def powitanie(self):
+        print(f"Nazywam się: {self.imie}")
+        # print(f"Nazywam się: {cz1.imie}")
+
+    def ruszaj(self):
+
+        if self.plec == "m":
+            print("Ruszył e m w drogę.")
+        else:
+            print("Ruszyał a m w drogę.")
+
+    # wypisz_wiek(), wypisz_wzrost()
+    def wypisz_wiek(self):
+        print(f"Mam {self.wiek} lat.")
+
+    def wypisz_wzrost(self):
+        print(f"Mam {self.wzrost} cm wzrostu.")
+
 
 # TypeError: Human.__init__() missing 3 required positional arguments: 'imie', 'wiek', and 'wzrost'
 # cz1 = Human()
@@ -30,3 +49,13 @@ print(cz1.plec)
 # 45
 # 189
 # m
+
+cz1.powitanie()
+cz1.ruszaj()
+# Nazywam się: Radek
+# Ruszył e m w drogę.
+
+cz1.wypisz_wiek()
+cz1.wypisz_wzrost()
+# Mam 45 lat.
+# Mam 189 cm wzrostu.
