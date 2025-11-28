@@ -121,3 +121,6 @@ spam %= 1    spam = spam % 1
 # https://naukapythona.com.pl/
 https://www.hackerrank.com/challenges/py-hello-world/problem?isFullScreen=true
 https://pl.altapps.net/soft/hackerrank-com
+
+pip freeze > requirements.txt
+pip install -r requirements.txt
