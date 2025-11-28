@@ -18,8 +18,17 @@ try:
     insert = """INSERT INTO developers (id, name, email, salary)
              VALUES (1,'Radek','raj@raj.pl', 10000);"""
 
-    c.execute(insert)
+    # c.execute(insert)
+    # conn.commit()
+
+    select = "SELECT * FROM developers;"
+    for row in c.execute(select):
+        print(row) # (1, 'Radek', 'raj@raj.pl', 10000.0)
+
+    update = """UPDATE developers SET salary=20000 WHERE id=1;"""
+    c.execute(update)
     conn.commit()
+
 
 except sqlite3.Error as e:
     print("Bład podłaczenia z bazą:", e)
