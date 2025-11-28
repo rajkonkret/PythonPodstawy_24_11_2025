@@ -2,6 +2,7 @@ import sqlite3
 
 try:
     conn = sqlite3.connect('baza_danych.db')
+    c = conn.cursor()
     print("Baza danych została podłaczona")
 
     query = """CREATE TABLE IF NOT EXISTS developers (
