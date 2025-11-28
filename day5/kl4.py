@@ -71,3 +71,4 @@ or2.latam()
 or2.wydaj_odglos()
 # Tu Orzel Bielik Lecę z szybkością: 56 km/h
 # kier kir kier kir
+# ctrl /
