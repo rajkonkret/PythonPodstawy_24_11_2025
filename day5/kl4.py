@@ -72,3 +72,10 @@ or2.wydaj_odglos()
 # Tu Orzel Bielik Lecę z szybkością: 56 km/h
 # kier kir kier kir
 # ctrl /
+
+# polimorfizm - obiekty rożnych kals mają wspolne cechy poprzez kalse abstrakcyjną
+lista = [or2, kur2]  # obiekty różnych klas
+for i in lista:
+    i.wydaj_odglos()
+# kier kir kier kir
+# Ko ko ko ko ko
