@@ -16,3 +16,29 @@ print(response)  # <Response [200]>
 # 3xx - warningi, przekierowanie
 # 4xx, 404 - brak zasobu, 400 Bad Req
 # 5xx - 500 Internal Server Error
+
+print(response.text)
+
+data = response.json()
+print(data)
+print(type(data))
+
+for k in data:
+    print(k)
+# categories
+# created_at
+# icon_url
+# id
+# updated_at
+# url
+# value
+
+print(data['value'])
+# Life is like a box of chocolates. They are all for Chuck Norris.
+
+# https://api.chucknorris.io/img/avatar/chuck-norris.png
+response_img = requests.get(data['icon_url'])
+with open('icon.png', "wb") as f:
+    f.write(response_img.content)
+
+print("Zdjęcie zostało zapisane.")
